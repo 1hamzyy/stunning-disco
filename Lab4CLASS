@@ -1,0 +1,18 @@
+graph={
+    'A':{'B':2,'C':10},
+    'B':{'C':3},
+    'C':{}
+}
+A=0
+B=999
+C=999
+visit=[]
+visit.append('A')
+if A + graph['A']['B']<B:
+    B=A+graph['A']['B']
+if B + graph['B']['C']<C:
+    C=B+graph['B']['C']
+visit.append('C')
+print(A)
+print(B)
+print(C)
